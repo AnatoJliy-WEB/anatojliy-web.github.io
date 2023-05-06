@@ -1,0 +1,273 @@
+@font-face {
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/Nunito-Regular.ttf');
+}
+
+@font-face {
+    font-family: 'Nunito_Italic';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/Nunito-Italic.ttf');
+}
+
+@font-face {
+    font-family: 'Nunito_Bold';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/Nunito-Bold.ttf');
+}
+
+/*_____normalize_____*/
+* {
+    margin: 0;
+    padding: 0;
+
+    transition: all 0.1s ease-in-out;
+}
+
+a {
+    font-family: 'Nunito_Bold', bold;
+    text-decoration: none;
+    color: #FD820D;
+    border-bottom: 2px solid #FD820D;
+}
+
+a:hover {
+    transition: 0.1s;
+    cursor: pointer;
+    color: #FD020D;
+    border-bottom: 2px solid #FD020D;
+}
+
+body {
+    background: #FDF4E3;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    color: black;
+    font-size: 14px;
+    font-family: 'Nunito', sans-serif;
+}
+
+/*_____размеры текста_____*/
+h1 {
+    font-size: 38px;
+}
+
+h2 {
+    font-size: 32px;
+}
+
+h3 {
+    font-size: 28px;
+}
+
+p {
+    font-size: 16px;
+    margin-top: 12px;
+}
+
+p:first-letter {
+    margin-left: 48px;
+}
+
+p.for_date {
+    font-size: 16px;
+    margin-top: 12px;
+
+    font-family: 'Nunito_Italic', cursive;
+}
+
+p.for_date:first-letter {
+    margin-left: 0;
+}
+
+.h_block {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.main_container {
+    position: relative;
+    width: 1000px;
+}
+
+/*_____скроллбар_scrollbar_____*/
+
+html {
+    /*для firefox*/
+    scrollbar-color: #FD820D #FDF4E3;
+    /* «цвет ползунка» «цвет полосы скроллбара» */
+    scrollbar-width: thin;
+    /*Толщина скролла thin, auto*/
+    scroll-behavior: smooth;
+    /*плавность движения*/
+}
+
+html::-webkit-scrollbar-track {
+    background-color: #FDF4E3;
+    /*Цвет скролла*/
+}
+
+html::-webkit-scrollbar-thumb {
+    border-radius: 6px;
+    /*Закругление ползунка*/
+    background-color: #FD820D;
+    /*Цвет ползунка*/
+}
+
+html::-webkit-scrollbar {
+    width: 6px;
+    /*Толщина скролла*/
+}
+
+/*_____header_____*/
+header {
+    position: sticky;
+    top: 0;
+    width: 100%;
+    height: 68px;
+    margin-bottom: 12px;
+    background: rgba(253, 244, 227, 0.6);
+    box-shadow: 0px 0px 12px -2px rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(2px);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    z-index: 1;
+}
+
+header .locate {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .left {
+    user-select: none;
+    margin-left: 4px;
+}
+
+header .left a {
+    display: flex;
+    align-items: center;
+    border-bottom: none;
+}
+
+header .left a:active {
+    transition: 0.04s;
+    transform: scale(0.96);
+}
+
+header .left img {
+    height: 60px;
+    border-radius: 10%;
+}
+
+header h1 {
+    color: black;
+    font-size: 32px;
+    margin-left: 8px;
+    padding-top: 2px;
+    font-family: 'Nunito-Regular', sans-serif;
+}
+
+header .right {
+    margin-right: 4px;
+}
+
+/*gumburger menu/гамбургер меню*/
+.gum_menu {
+    width: 36px;
+    height: 28px;
+    border: none;
+    background: none;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.gum_menu:hover {
+    cursor: pointer;
+}
+
+.gum_menu:active {
+    transition: 0.2s;
+    transform: scale(0.9);
+}
+
+.gum_menu:active div {
+
+    box-shadow: 0 0 2px 0px black;
+}
+
+.gum_menu div {
+    width: 100%;
+    height: 6px;
+    border-radius: 6px;
+}
+
+.gum_menu #line_1 {
+    background: black;
+}
+
+.gum_menu #line_2 {
+    background: #FD820D;
+}
+
+.gum_menu #line_3 {
+    background: #FD820D;
+    width: 80%;
+}
+
+.gumburger_menu {
+    position: fixed;
+    width: 360px;
+    height: 100%;
+    right: -400px;
+    background: #FDF4E3;
+    z-index: 2;
+    box-shadow: 0 0 12px -2px black;
+    border-top-left-radius: 10px;
+
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+
+    transition: 0.4s;
+}
+
+.gumburger_menu #gum_menu_close {
+    align-items: flex-start;
+    position: absolute;
+    top: 18px;
+    left: 12px;
+}
+
+.gumburger_menu a {
+    color: black;
+    font-size: 20px;
+    width: 80%;
+
+    padding: 20px 0 20px 0;
+    margin: 4px 0 4px 0;
+    border-bottom: 1px solid black;
+}
+
+.gumburger_menu a:hover {
+    transform: translateX(4px);
+}
+
+.gumburger_menu a:active {
+    transition: 0.02s;
+    transform: scale(0.9);
+}
