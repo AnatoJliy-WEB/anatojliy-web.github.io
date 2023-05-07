@@ -1,100 +1,4 @@
-@media (min-width: 1040px) {
-
-    table tr th.th1 {
-        width: 10%;
-        text-align: end;
-    }
-
-    table tr th.th2 {
-        width: 32%;
-        padding-left: 4%;
-        text-align: start;
-    }
-
-    table tr th.th3 {
-        width: 32%;
-        padding-left: 2%;
-        text-align: start;
-    }
-
-    table tr th.th4 {
-        width: 18%;
-        padding-left: 2%;
-        text-align: end;
-
-        user-select: none;
-    }
-
-    /*для расписаний звонков*/
-    .main_container.two_column {
-        display: flex;
-        flex-wrap: nowrap;
-        justify-content: space-evenly
-    }
-
-    .main_container.two_column .for_two {
-        width: 48%;
-    }
-
-    .main_container.two_column .for_two table {
-        padding-left: 1%;
-        padding-right: 1%;
-        border-left: 2px solid black;
-        border-right: 2px solid black;
-        border-radius: 8px;
-    }
-
-    .main_container.two_column .for_two table:hover {
-        border-left: 2px solid #FD820D;
-        border-right: 2px solid #FD820D;
-    }
-
-    .main_container.two_column .for_two table tr.row_main:hover th {
-        background: none;
-    }
-
-    .main_container.two_column .for_two table tr th {
-        border-radius: 16px;
-    }
-
-    .main_container.two_column .for_two table tr:hover th {
-        background: #FD820D88;
-    }
-
-    /*расписание от колледжа*/
-    .two_photo {
-        display: flex;
-        flex-wrap: nowrap;
-        grid-gap: 10px;
-    }
-
-    .two_photo a {
-        border-radius: 1%;
-        border-bottom: none;
-
-        overflow: hidden;
-        user-select: none;
-    }
-
-    .two_photo a:hover {
-        box-shadow: 0 0 4px -2px black;
-    }
-
-    .two_photo a:hover img {
-        filter: brightness(0.88);
-    }
-
-    .two_photo a:active {
-        transform: scale(0.98);
-    }
-
-    .two_photo img {
-        width: 100%;
-        height: 100%;
-    }
-}
-
-@media (max-width: 1040px) {
+@media (min-width: 320px) and (max-width: 1039px) {
     table.lessons {
         font-size: 12px;
     }
@@ -172,6 +76,102 @@
         flex-direction: column;
         flex-wrap: nowrap;
         grid-gap: 6px;
+    }
+
+    .two_photo a {
+        border-radius: 1%;
+        border-bottom: none;
+
+        overflow: hidden;
+        user-select: none;
+    }
+
+    .two_photo a:hover {
+        box-shadow: 0 0 4px -2px black;
+    }
+
+    .two_photo a:hover img {
+        filter: brightness(0.88);
+    }
+
+    .two_photo a:active {
+        transform: scale(0.98);
+    }
+
+    .two_photo img {
+        width: 100%;
+        height: 100%;
+    }
+}
+
+@media (min-width: 1040px) {
+
+    table tr th.th1 {
+        width: 10%;
+        text-align: end;
+    }
+
+    table tr th.th2 {
+        width: 32%;
+        padding-left: 4%;
+        text-align: start;
+    }
+
+    table tr th.th3 {
+        width: 32%;
+        padding-left: 2%;
+        text-align: start;
+    }
+
+    table tr th.th4 {
+        width: 18%;
+        padding-left: 2%;
+        text-align: end;
+
+        user-select: none;
+    }
+
+    /*для расписаний звонков*/
+    .main_container.two_column {
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: space-evenly
+    }
+
+    .main_container.two_column .for_two {
+        width: 48%;
+    }
+
+    .main_container.two_column .for_two table {
+        padding-left: 1%;
+        padding-right: 1%;
+        border-left: 2px solid black;
+        border-right: 2px solid black;
+        border-radius: 8px;
+    }
+
+    .main_container.two_column .for_two table:hover {
+        border-left: 2px solid #FD820D;
+        border-right: 2px solid #FD820D;
+    }
+
+    .main_container.two_column .for_two table tr.row_main:hover th {
+        background: none;
+    }
+
+    .main_container.two_column .for_two table tr th {
+        border-radius: 16px;
+    }
+
+    .main_container.two_column .for_two table tr:hover th {
+        background: #FD820D88;
+    }
+
+    /*расписание от колледжа*/
+    .two_photo {
+        display: flex;
+        flex-wrap: nowrap;
+        grid-gap: 10px;
     }
 
     .two_photo a {
