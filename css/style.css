@@ -126,7 +126,7 @@ body {
 
     .main_container {
         position: relative;
-        width: 300px;
+        width: 310px;
     }
 
     /*_____header_____*/
@@ -552,7 +552,7 @@ body {
     }
 
     table tr {
-        height: 30px;
+        height: 48px;
     }
 
     table tr.row_main {
