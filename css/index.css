@@ -1,4 +1,4 @@
-@media (min-width: 0px) and (max-width: 1039px) {
+@media (min-width: 320px) and (max-width: 1039px) {
     table.lessons {
         font-size: 12px;
     }
@@ -46,7 +46,7 @@
     }
 
     .main_container.two_column .for_two table {
-        padding-left: 1%;
+        padding-left: 9%;
         padding-right: 1%;
         border-left: 2px solid black;
         border-right: 2px solid black;
@@ -135,7 +135,7 @@
     .main_container.two_column {
         display: flex;
         flex-wrap: nowrap;
-        justify-content: space-evenly
+        justify-content: space-evenly;
     }
 
     .main_container.two_column .for_two {
@@ -143,7 +143,7 @@
     }
 
     .main_container.two_column .for_two table {
-        padding-left: 1%;
+        padding-left: 9%;
         padding-right: 1%;
         border-left: 2px solid black;
         border-right: 2px solid black;
