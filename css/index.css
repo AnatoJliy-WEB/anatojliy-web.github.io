@@ -1,9 +1,21 @@
 @media (min-width: 320px) and (max-width: 1039px) {
     table.lessons {
         font-size: 12px;
+        
+        padding-left: 1%;
+        padding-right: 1%;
+        border-left: 2px solid black;
+        border-right: 2px solid black;
+        border-radius: 16px;
     }
+    
     table.lessons .row_main {
         font-size: 12px;
+    }
+    
+    table.lessons .row_main th {
+        border-bottom: 2px solid black;
+        border-bottom-right-radius: 8px
     }
 
     table tr th.th1 {
@@ -26,27 +38,12 @@
 
     table tr th.th4 {
         display: none;
-        width: 18%;
-        padding-left: 2%;
-        text-align: end;
-
         user-select: none;
     }
 
     /*для расписаний звонков*/
-    .main_container.two_column {
-        display: flex;
-        flex-direction: column;
-        flex-wrap: nowrap;
-        justify-content: space-evenly
-    }
-
-    .main_container.two_column .for_two {
-        width: 100%;
-    }
-
     .main_container.two_column .for_two table {
-        padding-left: 9%;
+        padding-left: 2%;
         padding-right: 1%;
         border-left: 2px solid black;
         border-right: 2px solid black;
@@ -62,6 +59,11 @@
         background: none;
     }
 
+    .main_container.two_column .for_two table tr th {
+        text-align: end;
+        padding-right: 2%;
+    }
+    
     .main_container.two_column .for_two table tr th {
         border-radius: 16px;
     }
@@ -105,10 +107,22 @@
 }
 
 @media (min-width: 1040px) {
+    table.lessons {
+        padding-left: 1%;
+        padding-right: 1%;
+        border-left: 2px solid black;
+        border-right: 2px solid black;
+        border-radius: 16px;
+    }
+    
+    table.lessons .row_main th {
+        border-bottom: 2px solid black;
+        border-bottom-right-radius: 8px
+    }
 
     table tr th.th1 {
         width: 10%;
-        text-align: end;
+        text-align: center;
     }
 
     table tr th.th2 {
@@ -126,6 +140,7 @@
     table tr th.th4 {
         width: 18%;
         padding-left: 2%;
+        padding-right: 1%;
         text-align: end;
 
         user-select: none;
@@ -143,7 +158,7 @@
     }
 
     .main_container.two_column .for_two table {
-        padding-left: 9%;
+        padding-left: 2%;
         padding-right: 1%;
         border-left: 2px solid black;
         border-right: 2px solid black;
@@ -159,6 +174,11 @@
         background: none;
     }
 
+    .main_container.two_column .for_two table tr th {
+        text-align: end;
+        padding-right: 2%;
+    }
+    
     .main_container.two_column .for_two table tr th {
         border-radius: 16px;
     }
