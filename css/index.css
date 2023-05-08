@@ -1,4 +1,4 @@
-@media (min-width: 320px) and (max-width: 1039px) {
+@media (min-width: 0px) and (max-width: 1039px) {
     table.lessons {
         font-size: 12px;
         
@@ -15,7 +15,7 @@
     
     table.lessons .row_main th {
         border-bottom: 2px solid black;
-        border-bottom-right-radius: 8px
+        border-bottom-right-radius: 8px;
     }
 
     table tr th.th1 {
@@ -43,7 +43,7 @@
 
     /*для расписаний звонков*/
     .main_container.two_column .for_two table {
-        padding-left: 2%;
+        padding-left: 1%;
         padding-right: 1%;
         border-left: 2px solid black;
         border-right: 2px solid black;
@@ -60,12 +60,13 @@
     }
 
     .main_container.two_column .for_two table tr th {
+        border-radius: 16px;
+        padding: 0 2%;
         text-align: end;
-        padding-right: 2%;
     }
     
-    .main_container.two_column .for_two table tr th {
-        border-radius: 16px;
+    .main_container.two_column .for_two table tr th:first-child {
+        text-align: center;
     }
 
     .main_container.two_column .for_two table tr:hover th {
@@ -158,7 +159,7 @@
     }
 
     .main_container.two_column .for_two table {
-        padding-left: 2%;
+        padding-left: 1%;
         padding-right: 1%;
         border-left: 2px solid black;
         border-right: 2px solid black;
@@ -176,7 +177,11 @@
 
     .main_container.two_column .for_two table tr th {
         text-align: end;
-        padding-right: 2%;
+        padding: 0 2%;
+    }
+    
+    .main_container.two_column .for_two table tr th:first-child {
+        text-align: center;
     }
     
     .main_container.two_column .for_two table tr th {

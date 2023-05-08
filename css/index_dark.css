@@ -1,0 +1,16 @@
+/*_____ТЕМНАЯ ТЕМА_____*/
+@media (prefers-color-scheme: dark) {
+    table.lessons {
+        border-left: 2px solid white;
+        border-right: 2px solid white;
+    }
+    
+    table.lessons .row_main th {
+        border-bottom: 2px solid white;
+    }
+    
+    .main_container.two_column .for_two table {
+        border-left: 2px solid white;
+        border-right: 2px solid white;
+    }
+}

@@ -1,0 +1,75 @@
+/*_____ТЕМНАЯ ТЕМА_____*/
+@media (prefers-color-scheme: dark) {
+    body {
+        background: #555555;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        color: white;
+        font-size: 16px;
+        font-family: 'Nunito', sans-serif;
+    }
+
+    /*_____header_____*/
+    header {
+        background: rgba(0, 0, 0, 0.4);
+        box-shadow: 0px 0px 12px -4px rgba(0, 0, 0, 0.6);
+    }
+
+    header .left h1 {
+        color: white;
+    }
+
+    /*gumburger menu/гамбургер меню*/
+    .gum_menu #line_1 {
+        background: white;
+    }
+
+    /*само меню*/
+    .gumburger_menu {
+        background: rgba(0, 0, 0, 0.4);
+    }
+    
+    .gumburger_menu a {
+        color: white;
+        border-bottom: 2px solid white;
+    }
+
+    /*_____attention / внимание_____*/
+    .attention p {
+        color: white;
+    }
+
+    .attention .icon {
+        color: #fd020d;
+    }
+
+    /*_____warning / предупреждение_____*/
+    .warning p {
+        color: white;
+    }
+
+    /*_____for_note / для заметки_____*/
+    .warning .icon {
+        color: #fd820d;
+    }
+
+    .for_note p {
+        color: white;
+    }
+
+    .for_note .icon {
+        color: #CCDDFF;
+    }
+    
+    footer {
+        background: #00000099;
+        box-shadow: inset 0 6px 12px -10px white;
+    }
+    
+    footer .left h1 {
+        color: white;
+    }
+}
