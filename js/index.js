@@ -76,16 +76,16 @@ window.onload = function () {
                'Ахмерова Анна Владимировна',
                'Черникова Алёна Олеговна'];
     let a_href = ['<i>(пусто)</i>',
-               'none.html',
-               'none.html',
-               'none.html',
-               'none.html',
-               'none.html',
-               'none.html',
-               'none.html',
-               'none.html',
-               'none.html',
-               'none.html'];
+               'tasks.html#1',
+               'tasks.html#2',
+               'tasks.html#3',
+               'tasks.html#4',
+               'tasks.html#5',
+               'tasks.html#6',
+               'tasks.html#7',
+               'tasks.html#8',
+               'tasks.html#9',
+               'tasks.html#10'];
 
     for (var i = 0; i < 5; i++) {
         switch (window['lesson_' + [i + 1]].innerHTML) {

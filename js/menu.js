@@ -28,5 +28,4 @@ window.onload = function () {
             btn_gum_menu.style.opacity = '1';
         }, 100);
     });
-    console.log("i'm here");
 }
