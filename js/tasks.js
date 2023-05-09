@@ -6,7 +6,8 @@ try {
     details.open = true;
     document.location.hash = 'd'+hash_id;
     
-    details.style.background = '#FD820Daa';
+    /*details.style.background = '#FD820Daa';*/
+    details.style.background = '#90EE90aa';
     setTimeout(function () {
         details.style.background = '';
     }, 1000);
