@@ -1,0 +1,10 @@
+/*_____ТЕМНАЯ ТЕМА_____*/
+@media (prefers-color-scheme: dark) {
+    details[open] > summary {
+        border-bottom: 2px solid white;
+    }
+    
+    details[open] > summary:hover {
+        border-bottom: 2px solid black;
+    }
+}

@@ -1,0 +1,103 @@
+summary::-webkit-details-marker {
+    display: none;
+}
+
+summary::-moz-list-bullet {
+    list-style-type: none;
+}
+
+summary::marker {
+    display: none;
+}
+
+@media (min-width: 0px) and (max-width: 1039px) {
+    details {
+        margin: 8px 0;
+        padding-bottom: 6px;
+        border-radius: 8px;
+    }
+
+    details summary {
+        min-height: 40px;
+        padding: 0 16px;
+        margin-bottom: 10px;
+        border-radius: 8px;
+        
+        font-size: 20px;
+
+        display: flex;
+        align-items: center;
+
+        user-select: none;
+    }
+    
+    details summary:hover {
+        cursor: pointer;
+        background: #FD820Dee;
+        box-shadow: 0 0 12px -6px #FD820Dee;
+        color: white;
+    }
+
+    summary:before {
+        content: "+";
+        margin-right: 1%;
+    }
+
+    details[open] > summary {
+        border-bottom: 1px solid black;
+    }
+    
+    details[open] > summary:hover {
+        border-bottom: 1px solid white;
+    }
+    
+    details[open] > summary:before {
+        content: "–";
+    }
+}
+
+@media (min-width: 1040px) {
+    details {
+        margin: 10px 0;
+        padding-bottom: 12px;
+        border-radius: 8px;
+    }
+
+    details summary {
+        min-height: 60px;
+        padding: 0 20px;
+        margin-bottom: 10px;
+        border-radius: 8px;
+        
+        font-size: 28px;
+
+        display: flex;
+        align-items: center;
+
+        user-select: none;
+    }
+    
+    details summary:hover {
+        cursor: pointer;
+        background: #FD820Dee;
+        box-shadow: 0 0 12px -6px #FD820Dee;
+        color: white;
+    }
+
+    summary:before {
+        content: "+";
+        margin-right: 1%;
+    }
+
+    details[open] > summary {
+        border-bottom: 2px solid black;
+    }
+    
+    details[open] > summary:hover {
+        border-bottom: 2px solid white;
+    }
+    
+    details[open] > summary:before {
+        content: "–";
+    }
+}
