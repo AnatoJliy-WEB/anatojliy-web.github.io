@@ -339,12 +339,15 @@ body {
         flex-wrap: nowrap;
         align-items: center;
 
+        margin-bottom: 4px;
+    }
+    
+    .attention .icon h3 {
         color: #fd020d99;
         font-size: 18px;
         font-weight: bold;
         letter-spacing: 0px;
-
-        margin-bottom: 4px;
+        padding-top: 2px;
     }
 
     .attention .icon div {
@@ -398,12 +401,15 @@ body {
         flex-wrap: nowrap;
         align-items: center;
 
+        margin-bottom: 4px;
+    }
+    
+    .warning .icon h3 {
         color: #fd820d99;
         font-size: 18px;
         font-weight: bold;
         letter-spacing: 0px;
-
-        margin-bottom: 4px;
+        padding-top: 2px;
     }
 
     .warning .icon div {
@@ -457,12 +463,15 @@ body {
         flex-wrap: nowrap;
         align-items: center;
 
+        margin-bottom: 4px;
+    }
+    
+    .for_note .icon {
         color: #2262D099;
         font-size: 18px;
         font-weight: bold;
         letter-spacing: 0px;
-
-        margin-bottom: 4px;
+        padding-top: 2px;
     }
 
     .for_note .icon div {
@@ -839,14 +848,17 @@ body {
 
         display: flex;
         flex-wrap: nowrap;
-        align-items: center;
+        align-items: center;        
 
+        margin-bottom: 6px;
+    }
+    
+    .attention .icon h3 {
         color: #fd020d99;
         font-size: 20px;
         font-weight: bold;
         letter-spacing: 1px;
-
-        margin-bottom: 6px;
+        padding-top: 2px;
     }
 
     .attention .icon div {
@@ -900,12 +912,15 @@ body {
         flex-wrap: nowrap;
         align-items: center;
 
+        margin-bottom: 6px;
+    }
+    
+    .warning .icon h3 {
         color: #fd820d99;
         font-size: 20px;
         font-weight: bold;
         letter-spacing: 1px;
-
-        margin-bottom: 6px;
+        padding-top: 2px;
     }
 
     .warning .icon div {
@@ -959,12 +974,15 @@ body {
         flex-wrap: nowrap;
         align-items: center;
 
+        margin-bottom: 6px;
+    }
+
+.for_note .icon h3 {
         color: #2262D099;
         font-size: 20px;
         font-weight: bold;
         letter-spacing: 1px;
-
-        margin-bottom: 6px;
+        padding-top: 2px;
     }
 
     .for_note .icon div {

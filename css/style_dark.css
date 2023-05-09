@@ -42,7 +42,7 @@
         color: white;
     }
 
-    .attention .icon {
+    .attention .icon h3 {
         color: #fd020d;
     }
 
@@ -52,7 +52,7 @@
     }
 
     /*_____for_note / для заметки_____*/
-    .warning .icon {
+    .warning .icon h3 {
         color: #fd820d;
     }
 
@@ -60,7 +60,7 @@
         color: white;
     }
 
-    .for_note .icon {
+    .for_note .icon h3 {
         color: #CCDDFF;
     }
     
