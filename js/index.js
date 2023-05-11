@@ -63,7 +63,8 @@ window.onload = function () {
                   'Безопасность жизнедеятельности',
                   'Математические и логические основы электронно-вычислительной техники',
                   'Цифровая схемотехника',
-                  'Проектирование цифровых устройств'];
+                  'Проектирование цифровых устройств',
+                  'Учебная практика'];
     let snp = ['<i>(пусто)</i>',
                'Чебоксарова Светлана Алексеевна',
                'Толмачёва Светлана Николаевна',
@@ -74,6 +75,7 @@ window.onload = function () {
                'Никишин Иван Владимирович',
                'Куракова Кристина Сергеевна',
                'Ахмерова Анна Владимировна',
+               'Черникова Алёна Олеговна',
                'Черникова Алёна Олеговна'];
     let a_href = ['<i>(пусто)</i>',
                'tasks.html#1',
@@ -85,7 +87,8 @@ window.onload = function () {
                'tasks.html#7',
                'tasks.html#8',
                'tasks.html#9',
-               'tasks.html#10'];
+               'tasks.html#10',
+               '#'];
 
     for (var i = 0; i < 5; i++) {
         switch (window['lesson_' + [i + 1]].innerHTML) {
@@ -149,6 +152,11 @@ window.onload = function () {
                 window['snp_' + [i + 1]].innerHTML = snp[11];
                 window['a_href_' + [i + 1]].innerHTML = '<a href=' + a_href[11] + '>Перейти к заданию</a>';
                 break;
+             case '12':
+                window['lesson_' + [i + 1]].innerHTML = lesson[12];
+                window['snp_' + [i + 1]].innerHTML = snp[12];
+                window['a_href_' + [i + 1]].innerHTML = '<a href=' + a_href[12] + '>Перейти к заданию</a>';
+                break; 
             default:
                 window['lesson_' + [i + 1]].innerHTML = lesson[0];
                 window['snp_' + [i + 1]].innerHTML = snp[0];
