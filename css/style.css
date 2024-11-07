@@ -1,0 +1,749 @@
+@font-face {
+    font-family: 'Gotham-Book';
+    src: url(../fonts/gotham_book.otf);
+}
+
+@font-face {
+    font-family: 'Gotham-Bold';
+    src: url(../fonts/gotham_bold.otf);
+}
+
+@font-face {
+    font-family: 'Gotham-Medium';
+    src: url(../fonts/gotham_medium.otf);
+}
+
+@font-face {
+    font-family: 'OpenSans-Bold';
+    src: url(../fonts/OpenSans-Bold.ttf);
+}
+
+@font-face {
+    font-family: 'OpenSans-Regular';
+    src: url(../fonts/OpenSans-Regular.ttf);
+}
+
+@font-face {
+    font-family: 'MyriadPro-Regular';
+    src: url(../fonts/MYRIADPRO-REGULAR.OTF);
+}
+
+@font-face {
+    font-family: 'Roboto-Bold';
+    src: url(../fonts/Roboto-Bold.ttf);
+}
+
+@font-face {
+    font-family: 'Roboto-Regular';
+    src: url(../fonts/Roboto-Regular.ttf);
+}
+
+
+:root {
+    --color-white: white;
+    --color-main: #11749e;
+    --color-second: #2e85aa;
+    --color-grey-d: #222222;
+    --color-grey-h2-before: rgba(34, 34, 34, 0.18);
+    --color-grey-h2-before-l: rgba(255, 255, 255, 0.18);
+    --color-grey-l: #f3f3f3;
+    scroll-behavior: smooth;
+}
+
+.clearfix {
+    zoom: 1;
+}
+
+.clearfix:before,
+.clearfix:after {
+    content: "";
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+body {
+    font-family: 'Gotham-Book';
+    font-size: 15px;
+    color: var(--color-white);
+}
+
+.content {
+    width: 1170px;
+    margin: 0 auto;
+}
+
+/*bg начало*/
+
+.bg {
+    width: 100%;
+}
+
+.bgImg {
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.bgImg#bg1 {
+    background-image: url(../img/bg1.png);
+    padding-bottom: 110px;
+}
+
+.bg.bgColorMain {
+    background: var(--color-main);
+}
+
+.bg.bgColorGreyD {
+    position: relative;
+    background: var(--color-grey-d);
+}
+
+.bg.bgColorGreyL {
+    position: relative;
+    background: var(--color-grey-l);
+}
+
+/*bg конец*/
+
+/*шапка начало*/
+header {
+    width: 100%;
+    height: 115px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.38);
+    align-content: center;
+}
+
+header .content {
+    height: inherit;
+    display: flex;
+}
+
+header a {
+    color: var(--color-white);
+    text-decoration: none;
+}
+
+header a.logo {
+    display: block;
+    background-color: var(--color-main);
+    width: 67px;
+    height: 67px;
+    box-shadow: 12px 8px rgba(255, 255, 255, 0.75);
+    margin: 21px 240px 0 0;
+    align-content: center;
+    text-align: center;
+    font-family: 'OpenSans-Bold';
+    font-size: 30px;
+    transition: all 0.1s ease;
+}
+
+header a.logo:hover {
+    background-color: rgba(255, 255, 255, 0.75);
+    box-shadow: 12px 8px var(--color-main);
+    color: var(--color-main);
+}
+
+header a.logo:active {
+    transform: scale(0.9);
+}
+
+header nav {
+    height: inherit;
+}
+
+header ul {
+    height: inherit;
+    display: flex;
+}
+
+header ul li a {
+    white-space: nowrap;
+    font-size: 20px;
+    display: block;
+    height: 93px;
+    align-content: center;
+    padding-top: 16px;
+
+    transition: all 0.1s ease;
+}
+
+header ul.social {
+    margin-left: 36px;
+}
+
+header ul.social li a {
+    margin-right: 10px;
+}
+
+header ul.social li:last-child > a {
+    padding-top: 14px;
+    height: 95px;
+    margin-right: 0;
+}
+
+header nav ul li a {
+    font-family: 'MyriadPro-Regular';
+    padding: 16px 12px 0 12px;
+    margin-right: 24px;
+}
+
+header ul li:last-child > a {
+    margin-right: 0;
+}
+
+header ul li a:hover {
+    cursor: pointer;
+    border-bottom: 6px solid var(--color-main);
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+header ul li a:active {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+/*шапка конец*/
+
+h2 {
+    padding-top: 166px;
+    font-size: 38px;
+    font-family: "Gotham-Medium";
+    color: var(--color-white);
+    text-align: center;
+    text-transform: uppercase;
+    font-family: "Gotham-Medium";
+    letter-spacing: -0.5px;
+    align-content: center;
+    position: relative;
+    transform-style: preserve-3d;
+}
+
+h2::before {
+    font-family: "Roboto-Bold";
+    font-size: 248px;
+    transform: scaleX(0.85) translateZ(-1px);
+    text-transform: uppercase;
+
+    display: block;
+    position: absolute;
+    width: 100%;
+    margin-top: -102px;
+}
+
+h3 {
+    margin: 15px 0 34px 0;
+    font-family: "Gotham-Medium";
+    text-transform: uppercase;
+    font-size: 25px;
+}
+
+h4 {
+    font-family: "Gotham-Medium";
+}
+
+p {
+    line-height: 24px;
+}
+
+/*главный заголовок начало*/
+h1 {
+    font-family: 'Gotham-Bold';
+    color: rgb(245, 245, 245);
+    text-transform: uppercase;
+    letter-spacing: -7px;
+    font-size: 152px;
+    margin-top: 252px;
+    padding-right: 10px;
+    text-align: center;
+}
+
+h1 + p {
+    font-family: 'Gotham-Medium';
+    color: var(--color-main);
+    text-transform: uppercase;
+    letter-spacing: 18px;
+    font-size: 25px;
+    line-height: normal;
+    margin-top: 12px;
+    padding-left: 18px;
+    text-align: center;
+}
+
+p.onScrollDown {
+    font-family: 'OpenSans-Regular';
+    text-align: center;
+    font-size: 13px;
+    line-height: normal;
+    margin-top: 108px;
+}
+
+a.scrollDown {
+    display: block;
+    width: 63px;
+    height: 61px;
+    margin: 18px auto 0px auto;
+    padding-top: 2px;
+    border-radius: 50%;
+    border: 1px solid grey;
+    color: var(--color-white);
+    font-size: 32px;
+    text-align: center;
+    align-content: center;
+    text-decoration: none;
+
+    transition: all 0.1s ease;
+}
+
+a.scrollDown:hover {
+    background-color: grey;
+}
+
+a.scrollDown:active {
+    transform: scale(0.9);
+}
+
+/*главный заголовок конец*/
+
+/*We Are An Awesome Agency начало*/
+
+h2#h2::before {
+    color: var(--color-second);
+    content: 'w';
+}
+
+.feature {
+    margin-top: 140px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 124px;
+}
+
+.feature .card {
+    width: 270px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 30px;
+}
+
+.feature .card:last-child {
+    margin-right: 0;
+
+}
+
+.feature .card .circle {
+    background-color: var(--color-second);
+    width: 133px;
+    height: 133px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 22px;
+}
+
+.feature .card h4 {
+    font-size: 18px;
+    text-transform: uppercase;
+    margin-bottom: 24px;
+}
+
+.feature .card p {
+    color: var(--color-white);
+    line-height: 1.6;
+    text-align: center;
+}
+
+/*We Are An Awesome Agency конец*/
+
+
+/*Akita Inu Dog начало*/
+.bgColorGreyD {
+    position: relative;
+}
+
+.bg .bgCG {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+}
+
+.bgColorGreyD #bgCG-1 {
+    background-image: url(../img/bg2.png);
+    left: 50%;
+    right: 0;
+}
+
+.bgColorGreyL #bgCG-2 {
+    background-image: url(../img/bg3.png);
+    left: 0;
+    right: 50%;
+}
+
+.AID {
+    width: 472px;
+    padding: 80px 0 86px 0px;
+}
+
+.AID p.preH {
+    font-size: 13px;
+    color: var(--color-grey-l);
+    margin: 0;
+    padding-bottom: 0;
+    line-height: normal;
+}
+
+.AID p span.date::after {
+    content: "|";
+    margin: 0 12px;
+}
+
+
+
+.AID p {
+    line-height: 24px;
+    padding-bottom: 24px;
+}
+
+.AID p:last-child {
+    padding-bottom: 0;
+}
+
+.AID-2 {
+    padding: 102px 0 90px 0px;
+    margin-left: 50%;
+    padding-left: 80px;
+    color: var(--color-grey-d);
+}
+
+.AID-2 p.preH {
+    color: var(--color-grey-d);
+}
+
+
+/*Akita Inu Dog конец*/
+
+/*lets blog начало*/
+
+.letsBlog h2,
+.letsBlog h3,
+.letsBlog p {
+    color: var(--color-grey-d);
+}
+
+.letsBlog h2 {
+    padding-top: 160px;
+    padding-left: 8px;
+    margin-bottom: 106px;
+}
+
+.letsBlog h2::before {
+    margin-left: -6px;
+    content: "B";
+    color: var(--color-grey-h2-before);
+}
+
+
+.letsBlog h3 {
+    font-size: 30px;
+    text-align: center;
+    font-family: "Gotham-Book";
+    text-transform: none;
+}
+
+.letsBlog .cards {
+    display: flex;
+    justify-content: space-between;
+    margin: 76px 0 106px 0;
+}
+
+.letsBlog .card {
+    width: 270px;
+}
+
+.letsBlog .card img {
+    width: 270px;
+    height: 280px;
+    object-fit: cover;
+}
+
+.letsBlog .card h4 {
+    margin-top: 40px;
+    font-size: 18px;
+    text-transform: uppercase;
+    color: var(--color-main);
+    text-align: center;
+}
+
+.letsBlog .card p {
+    margin-top: 18px;
+    line-height: 24px;
+    text-align: center;
+}
+
+/*lets blog конец*/
+
+/*заметки начало*/
+
+.notes {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 106px 0 151px 0;
+}
+
+.notes .card {
+    width: 555px;
+    display: flex;
+    align-items: center;
+}
+
+.notes .card img {
+    object-fit: cover;
+    width: 260px;
+    margin-right: 34px;
+    margin-top: -12px;
+}
+
+.notes .card p {
+    line-height: 24px;
+}
+
+/*заметки конец*/
+
+/*телефон начало*/
+.bgImg#bg2 {
+    background-image: url(../img/bg4.png);
+}
+
+.phoneScreen {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 18px;
+}
+
+.phoneScreen div:first-child {
+    width: 470px;
+    margin-top: 210px;
+}
+
+.phoneScreen img {
+    margin: 100px 86px;
+    object-fit: contain;
+    user-select: none;
+}
+
+.phoneScreen p.strong {
+    padding: 9px 20px;
+    margin: 24px 0;
+    width: 360px;
+    background-color: var(--color-main);
+    text-transform: uppercase;
+    line-height: normal;
+}
+
+.phoneScreen p.strong:first-child {
+    margin-top: 65px;
+    width: 330px;
+}
+
+.phoneScreen p.strong:last-child {
+    width: 390px;
+}
+
+/*телефон конец*/
+
+/*наша команда начало*/
+.ourTeam h2 {
+    padding-top: 134px;
+    color: var(--color-grey-d);
+}
+
+.ourTeam h2::before {
+    color: var(--color-grey-h2-before);
+    content: "t";
+}
+
+.ourTeam h3 {
+    margin-top: 132px;
+    font-family: "Gotham-Book";
+    text-transform: none;
+    text-align: center;
+    font-size: 30px;
+    color: var(--color-grey-d);
+}
+
+.ourTeam .content {
+    display: flex;
+    padding-bottom: 84px;
+    justify-content: space-between;
+}
+
+.ourTeam .card {
+    margin: 36px 0;
+    position: relative;
+    width: 270px;
+}
+
+.ourTeam .card img {
+    width: 270px;
+    height: 416px;
+    object-fit: cover;
+}
+
+.ourTeam .card h4 {
+    color: var(--color-main);
+    text-align: center;
+    font-size: 20px;
+    margin-bottom: 6px;
+}
+
+.ourTeam .card p {
+    color: var(--color-grey-d);
+    text-align: center;
+}
+
+.ourTeam .card div {
+    position: absolute;
+    bottom: -40px;
+    margin: 0 25px;
+    padding: 20px 0;
+
+    width: 220px;
+    background-color: var(--color-white);
+}
+
+/*наша команда конец*/
+
+/*форма отправки начало*/
+.bgImg#bg3 {
+    background-image: url(../img/bg5.png);
+}
+
+.forForm h2 {
+    padding: 220px 0 144px 0;
+}
+
+.forForm h2::before {
+    content: "c";
+    color: var(--color-grey-h2-before-l);
+}
+
+.forForm form {
+    display: flex;
+    flex-direction: column;
+}
+
+.forForm form input, .forForm form textarea {
+    color: var(--color-white);
+    font-size: 1rem;
+    border: none;
+    background: none;
+}
+
+.forForm form input:focus, .forForm form input:focus-visible {
+    outline: none;
+}
+
+.forForm form div {
+    display: flex;
+    justify-content: center;
+}
+
+.forForm form div:first-child {
+    justify-content: space-between;
+}
+
+.forForm form label, .forForm form textarea {
+    border: 1px solid var(--color-white);
+
+}
+.forForm form label {
+    display: flex;
+    justify-content: space-between;
+    padding: 18px 22px 12px 22px;
+    width: 324px;
+}
+
+.forForm form label input {
+    width: 260px;
+    margin-top: -3px;
+}
+
+.forForm form textarea {
+    margin-top: 38px;
+    padding: 14px 22px;
+    width: 100%;
+    height: 120px;
+}
+
+.forForm form textarea:focus, .forForm form textarea:focus-visible {
+    outline: none;
+}
+
+.forForm input[type="submit"] {
+    margin: 48px 0 98px -3px;
+    font-family: "Gotham-Medium";
+    font-size: 24px;
+    background-color: var(--color-main);
+    padding: 18px 66px 18px 60px;
+    transition: all 0.1s ease;
+}
+
+.forForm input[type="submit"]:hover {
+    cursor: pointer;
+}
+
+.forForm input[type="submit"]:active {
+    transform: scale(0.9);
+}
+
+/*форма отправки конец*/
+
+.bgImg.forMap {
+    background-image: url(../img/map.png);
+    height: 20.75vw;
+}
+
+.bgImg.forMap div, .bgImg.forMap div iframe {
+    width: 100%;
+    height: inherit;
+}
+
+footer {
+    padding: 46px 0;
+    background-color: var(--color-grey-d);
+}
+
+footer .content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+footer .content p {
+    padding: 0 6px;
+    font-family: "Roboto-Regular";
+    
+    font-size: 13px;
+    display: flex;
+}
+
+footer .content p:first-child {
+    padding-top: 2px;
+    letter-spacing: 0.3px;
+}
+
+footer .content p:last-child {
+    padding-top: 6px;
+    letter-spacing: 0.1px;
+}
+
+footer .content p img.icon {
+    width: 26px;
+    height: 26px;
+    object-position: -60px 0;
+    object-fit: cover;
+    margin: -6px 4px 0 2px;
+}
